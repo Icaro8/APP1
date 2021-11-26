@@ -1,0 +1,90 @@
+:root{
+    --color_one: #0F6177;
+    --color_two: #1BBC9B;
+    --color_three:#16A086;
+    --color_for:  #59AE7F;
+    --color_five: #0d0e0f;
+    --bakcground_cards:#151320;
+    --text-family-roboto: 'Roboto Mono', monospace;
+    --font_family-bangers: 'Bangers', cursive;; 
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box
+}
+/* Body*/
+body{
+    background-color: var(--color_five);
+}
+/*Flex cards*/
+.flex-cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white
+}
+/*h2*/
+div h2{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--text-family);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+div h2::after, div h2::before{
+    content: '';
+    width: 50%;
+    height: 8px;
+    background-color: var(--color_two);
+    display: block;
+    margin:10px auto;
+    border-radius: 5px;
+
+}
+/*cards*/
+.card-pelicula{
+    padding: 10px;
+    width: 300px;
+    border: 2px solid var(--color_for);
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px #ddd;
+    font-family: var(--font_family-bangers);
+    background-color: var(--bakcground_cards);
+}
+/*Titulo cards*/
+.card-pelicula h3{
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+/*cards paragrafo*/
+.card-pelicula p{
+    padding: 5px;
+    letter-spacing: 2px;
+}
+/*card hover*/
+.card-pelicula:hover{
+    transform: scale(1.2);
+    transition: linear .4s;
+}
+/*ul*/
+.flex-cards ul{
+    list-style-type: none;
+    text-align: center;
+}
+/*Botão*/
+
+ul li button{
+    width: 50%;
+
+    
+}
